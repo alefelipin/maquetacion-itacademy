@@ -42,7 +42,7 @@
 
     <section class="account-box">
 
-        <div class="my-account-text">my account</div>
+        <h1 class="my-account-text">MY ACCOUNT</h1>
 
         <div class="login-option">
             <p class="options-text">Log in</p>
@@ -51,28 +51,35 @@
         <div class="account-option">
             <p class="options-text">Create an Account</p>
         </div>
-        
-        <p class="enter-text">Enter your user ID</p>
 
-        <p class="mandatory-text">*Mandatory fields</p>
+        <div class="user-id">
+            <p class="enter-text">Enter your user ID</p>
+            <p class="mandatory-text">*Mandatory fields</p>
+        </div>
 
         <p class="email-text">Email address</p>
+
+        <div class="email-form">
+
+            <input id="email" type="text" placeholder="Email address">
+              
+        </div>
+
         <p class="password-text">Password</p>
 
-            <div class="login-form">
-                <input id="email" type="text" placeholder="Email address">
-                <input id="password" type="text" placeholder="Password">
-            </div>
+        <div class="password-form">
 
-            <div class="forgotten-psw"><a href="https://ticket.louvre.fr/en/mot-de-passe-oublie">Forgot your password?</a></div>
+            <input id="password" type="password" placeholder="Password">
 
-            <div class="login-button">Log in</div>
+        </div>
 
+        <p class="forgotten-psw"><a href="https://ticket.louvre.fr/en/mot-de-passe-oublie">Forgot your password?</a></p>
+
+        <div class="login-button">
+            <button type="submit" >Log in</button>
+        </div>
+    
     </section>
-
-    
-    
-    </div>
 
 </main>
 
@@ -153,7 +160,7 @@
             <div class="footer-card2">
                 <h2 class="footer-title">FOLLOW US</h2>
                 <div class="footer-list-right">
-                    <img width="400px" heigth="48px" src="./src/assets/icons/social_media.png">
+                    <img width="400" src="./src/assets/icons/social_media.png" alt="social media icons">
 
                     <!--
                     <button class="facebook-logo"><a href="https://www.facebook.com/museedulouvre" aria-label="Facebook"></a><img width="400px" heigth="48px" src="./src/assets/icons/facebook.png" alt="#"></button>
@@ -183,7 +190,7 @@
         </ul>
     
         <div class="footer-logo">
-            <img src="./src/assets/logos/logo_nuage.jpg">
+            <img src="./src/assets/logos/logo_nuage.jpg" alt="museum logo">
         </div>
 
     </div>

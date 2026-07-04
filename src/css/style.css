@@ -1,8 +1,8 @@
 
 body {
     display: grid;
-    grid-template-columns: 40% 30% 30%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 3fr 2fr 1fr;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr 2fr 1fr;
     background-color: black;
 }
 
@@ -52,15 +52,13 @@ a:link {
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    padding: 10px;
+    text-align: center;
 
     .louvre-link {
-    display: flex;
-    flex-direction: column;
-    font-family: "Cinzel", serif;
-    text-align: center;
     font-size: 30px;
     font-weight: 400;
+    font-family: Cinzel, serif;
+    letter-spacing: 9.5px;
     text-transform: uppercase;
     color: white;
         a {
@@ -72,11 +70,8 @@ a:link {
     }
 
     .ticketing-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     font-size: 12px;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     color: #008573;
@@ -94,18 +89,20 @@ a:link {
     .navbar-right-button {
     border: 1px solid #707070;
     width: 100px;
-    border-radius: 20px;
-    padding: 10px;
+    height: 20px;
+    border-radius: 25px;
     text-align: center;
-    font-family: "Roboto";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 25px;
-    }   
+    align-content: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px;
+    }    
 }
 
 .login {
     background-color: white;
+    font-size: 15px;
     color: #707070;
     padding-left: 10px;
 }
@@ -186,30 +183,31 @@ main {
     text-align: center;
 }
 
-
-
-.enter-text {
+.user-id {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-end: 7;
+}
+
+.enter-text {
+    display: flex;
     font-size: 1rem;
     font-weight: 400;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    line-height: 25px;
 }
 
 .mandatory-text {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    display: flex;
     font-size: .75rem;
     font-weight: 400;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    line-height: 18px; 
+    color: #db0a5b;
+}
+
+input {
+  padding-left: 15px;
 }
 
 .email-text {
@@ -219,6 +217,21 @@ main {
     grid-row-start: 7;
     grid-row-end: 8;
     padding-left: 10px;
+    color: black;
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    background-color: white;
+    
+}
+
+.email-form {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9; 
     color: black;
     font-size: .875rem;
     font-weight: 400;
@@ -239,16 +252,24 @@ main {
     font-weight: 400;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     line-height: 22px;
-    background-color: white;   
+    background-color: white;
+    padding-left: 20px;
 }
 
-.login-form {
-     display: grid;
-    grid-column-start: 2;
+.password-form {
+    display: grid;
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 8;
-    grid-row-end: 9;
-    border: 1px solid #5a5a5a;
+    grid-row-end: 9; 
+    color: black;
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    background-color: white;
+    padding-left: 20px;
+
 }
 
 .forgotten-psw {
@@ -262,28 +283,36 @@ main {
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     line-height: 22px;
     background-color: white;
-    a:link {
-    color: black;
+     a:link {
+        color: #000000 ;
     }
+    a:visited {
+        color: #000000;
+        }  
+    
+}
+
+button {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 22px;
+    background-color: #000000;
+    align-content: center;
+    border: 3px solid #000000;
+    border-radius: 1.5rem;
+
 }
 
 .login-button {
     display: grid;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 10;
     grid-row-end: 11;
-    border: 3px solid #000;
-    border-radius: 1.5rem;
-    background-color: #000;
     height: 3rem;
-    text-align: center;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    line-height: 22px;
-    background-color: #000;
+    padding: 10px;  
 }
 
 footer {
