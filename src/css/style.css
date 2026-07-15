@@ -72,6 +72,7 @@ main {
     flex: 2;
     padding-top: 3rem;
     padding-left: 8rem;
+    padding-right: 5rem;
 }
 
 .h1-title {
@@ -87,23 +88,41 @@ main {
 .options-container {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    justify-content: center;
 }
 
-.option {
+.option1 {
+    display: flex;
+    flex: .5;
     font-size: 1rem;
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    text-align: center;
-    border-bottom: 4px solid #000000; 
-    
+    border: none;
+    border-bottom: 4px solid #000000;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background: transparent;
+}
+
+.option2 {
+    display: flex;
+    flex: .5;
+    font-size: 1rem;
+    font-style: normal;
+    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    border: none;
+    border-bottom: 1px solid #707070;
+    align-items: center;
+    justify-content: center;
+    text-align:center; 
+    background: transparent;  
 }
 
 .h2-title {
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     text-align:left;
+    padding-top: 3rem;
 }
 
 .mandatory-text {
@@ -118,22 +137,50 @@ main {
 .form-container {
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
+    gap: 3rem;
 }
 
 .input-container {
     display: flex;
     flex-direction: row;
+    gap: 16.5rem;
 }
 
-.card {
+.card1 {
     display: flex;
     flex-direction: column;
+    gap: .4rem;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem; 
 }
 
 .card-label {
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     text-align:left;
+}
+
+.email-input {
+    color: black;
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    background-color: white; 
+}
+
+.password-input {
+    color: black;
+    font-size: .875rem;
+    font-weight: 400;
+    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    background-color: white;
 }
 
 .submit-container {
