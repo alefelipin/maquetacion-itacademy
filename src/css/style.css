@@ -286,6 +286,7 @@ footer {
 
 .footer-container2 {
     display: flex;
+
 }
 
 .footer-container2-box {
@@ -294,22 +295,30 @@ footer {
     padding-top: 30px;
 }
 
-.footer-card,
+.footer-card {
+    flex: 1;
+    padding: 10px 10px;
+    background-color: red
+}
+
 .footer-card2 {
     flex: 1;
-    padding: 50px 35px;
-    background-color: #000000;
+    padding: 10px 10px;
+    background-color: green
 }
+
+
 
 .footer-title {
     text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-family: Verdana, sans-serif;
-    font-size: .775rem;
+    letter-spacing: 0.12em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 22px;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .footer-list-left {
@@ -320,8 +329,11 @@ footer {
     gap: 20px;
     padding: 0;
     margin-top: 35px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.2;
     color: #ffffff;
-
 }
 
 .footer-list-right {
