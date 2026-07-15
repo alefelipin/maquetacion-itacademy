@@ -10,77 +10,62 @@
 <body>
 
 <header>
-        
-    <nav>
-        <ul class="navbar-left" style="list-style-type: none">
-            <li class="menu-button"><a href="#" style="text-decoration: none">Menu</a></li>
-            <li class="language-button"><a href="#" style="text-decoration: none">English</a></li>
-        </ul>
-            
-        <ul class="navbar-center">
-            <li class="louvre-link"><a href="https://ticket.louvre.fr/en">louvre</a></li>
-            <li class="ticketing-text">official ticketing service</li>
-        </ul>
 
-        <ul class="navbar-right" style="list-style-type: none">
-            <li class="navbar-right-button"><a href="#" style="text-decoration: none">Basket</a></li>
-            <li class="navbar-right-button"><a href="#" style="text-decoration: none">My Account</a></li>
-        </ul>
-    </nav>
-
-    <div class="login">
-        <p>Log In - Official Ticketing Service of the Musée du Louvre</p>
-    </div>
-  
+    <section class="header-container">
+        <nav class="nav-container">
+            <ul class="nav-container-left">
+                <li class="menu-button"><a href="#">Menu</a></li>
+                <li class="language-button"><a href="#">English</a></li>
+            </ul>
+            <ul class="nav-container-center">
+                <li class="louvre-link"><a href="https://ticket.louvre.fr/en">LOUVRE</a></li>
+                <li class="ticketing-text">OFFICIAL TICKETING SERVICE</li>
+            </ul>
+            <ul class="nav-container-right">
+                <li class="navbar-right-button"><a href="#">Basket</a></li>
+                <li class="navbar-right-button"><a href="#">My Account</a></li>
+            </ul>
+        </nav>
+        <div class="login-container">Log In - Official Ticketing Service of the Musée du Louvre</div>
+    </section>
 </header>
 
 <main>
+    <div class="hero">
 
-    <div class="aside">
-        <img src="./src/assets/img/image-login.jpg" alt="Escalier Mollien at Denon wing">
+        <section class="hero-image">
+            <img src="./src/assets/img/image-login.jpg" alt="Escalier Mollien at Denon wing">
+        </section>
+
+        <section class="hero-content">
+            <h1 class="h1-title">MY ACCOUNT</h1>
+            <div class="options-container">
+                <div class="option">Log in</div>
+                <div class="option">Create an Account</div>
+            </div>
+
+            <h2 class="h2-title">Enter your user ID</h2>
+            <div class="mandatory-text">*Mandatory fields</div>
+
+            <form class="form-container">
+                <div class="input-container">
+                    <div class="card">
+                        <label for="email" class="card-label">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
+                    </div>
+                    <div class="card">
+                        <label for="password" class="card-label">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div> 
+                </div>
+
+                <div class="submit-container">
+                    <div class="forgotten-psw"><a href="https://ticket.louvre.fr/en/mot-de-passe-oublie">Forgot your password?</a></div>
+                    <button class="submit-button"  type="submit" >Log in</button>
+                </div>   
+            </form>   
+        </section>
     </div>
-
-    <section class="account-box">
-
-        <h1 class="my-account-text">MY ACCOUNT</h1>
-
-        <div class="login-option">
-            <p class="options-text">Log in</p>
-        </div>
-
-        <div class="account-option">
-            <p class="options-text">Create an Account</p>
-        </div>
-
-        <div class="user-id">
-            <p class="enter-text">Enter your user ID</p>
-            <p class="mandatory-text">*Mandatory fields</p>
-        </div>
-
-        <p class="email-text">Email address</p>
-
-        <div class="email-form">
-
-            <input id="email" type="text" placeholder="Email address">
-              
-        </div>
-
-        <p class="password-text">Password</p>
-
-        <div class="password-form">
-
-            <input id="password" type="password" placeholder="Password">
-
-        </div>
-
-        <p class="forgotten-psw"><a href="https://ticket.louvre.fr/en/mot-de-passe-oublie">Forgot your password?</a></p>
-
-        <div class="login-button">
-            <button type="submit" >Log in</button>
-        </div>
-    
-    </section>
-
 </main>
 
 <footer>
@@ -93,35 +78,13 @@
             <h2 class="faq-text2">Frequently asked questions</h2>
             <p class="faq-text3"> Answers to all your questions.</p>
             <div class="faq-link"><a href="https://www.louvre.fr/en/visit/faq">See FAQ</a></div>
-
         </div>
 
         <div class="faq-box-right">
 
-                <p class="questions"> Can I get a refund?</p>
-                <!--
-                <p> 
-                    The sale of museum admission tickets or related services is considered a sale of leisure services and confers no right to a withdrawal period. Tickets are valid for the chosen time and date only,  and cannot be modified, exchanged or refunded.  
-                </p>
-                <p>
-                    Times and dates cannot be modified once booked.
-                </p>
-                <p>
-                    However, in the event of a cancellation or modification of the relevant service by the Louvre, you will be entitled to a refund. Refund eligibility criteria are specified in the museum's Terms and Conditions.
-                </p>
-                -->
-
+                <p class="questions"> Can I get a refund?</p>   
                 <p class="questions">Can I use my ticket to access temporary exhibitions?</p>
-                <!--
-                <p>
-                    Tickets include admission to all Louvre collections and to the Musée National Eugène-Delacroix, on the day of your visit to the Louvre or on the next day the Musée National Eugène-Delacroix is open.
-                </p>
-                <p> Note: for access to some exhibitions, visitors must book a specific time slot.</p>
-                -->
-
-
-
-
+              
         </div>
     
     </div>
@@ -161,19 +124,9 @@
                 <h2 class="footer-title">FOLLOW US</h2>
                 <div class="footer-list-right">
                     <img width="400" src="./src/assets/icons/social_media.png" alt="social media icons">
-
-                    <!--
-                    <button class="facebook-logo"><a href="https://www.facebook.com/museedulouvre" aria-label="Facebook"></a><img width="400px" heigth="48px" src="./src/assets/icons/facebook.png" alt="#"></button>
-                    <button class="instagram-logo"><a href="https://www.instagram.com/museelouvre/" aria-label="Instagram"></a><img width="400px" heigth="48px" src="./src/assets/icons/instagram.png" alt="#"></button>
-                    <button class="twitter-logo"><a href="https://twitter.com/MuseeLouvre" aria-label="Twitter/X"><img width="400px" heigth="48px" src="./src/assets/icons/twitter.png" alt="#"></button>
-                    <button class="youtube-logo"><a href="https://www.youtube.com/user/louvre" aria-label="YouTube"><img width="400px" heigth="48px" src="./src/assets/icons/youtube.png" alt="#"></button>
-                    <button class="pinterest-logo"><a href="https://www.pinterest.fr/museedulouvre/" aria-label="Pinterest"><img width="400px" heigth="48px" src="./src/assets/icons/pinterest.png" alt="#"></button>
-                    <button class="linkedin-logo"><a href="https://www.linkedin.com/company/musee-du-louvre" aria-label="LinkedIn"><img width="400px" heigth="48px" src="./src/assets/icons/linkedin.png" alt="#"></button>
-                    -->
-                    </div>
+                </div>
             </div>  
         </div>
-
     </div>
     
 
