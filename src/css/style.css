@@ -17,32 +17,33 @@ main {
 
 .nav-container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
     flex-wrap: wrap;
+    padding: 0 40px;
 }
 
-.nav-container-left {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    list-style: none;
-    gap: 3rem;
-}
-
-.nav-container-center {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    list-style: none;
-    gap: 0.1rem;
-}
-
+.nav-container-left,
 .nav-container-right {
     display: flex;
+    align-items: center;
     flex-direction: row;
     flex: 1;
     list-style: none;
     gap: 2rem;
+}
+
+.nav-container-right {
+    justify-content: flex-end;
+}
+
+.nav-container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    list-style: none;
 }
 
 .login-container {
@@ -56,33 +57,36 @@ main {
 }
 
 .hero-image {
-    display: flex;
-    flex: 1.5
+    flex: 0 0 36%;
+    overflow: hidden;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    padding-top: 3rem;
-    padding-left: 8rem;
-    padding-right: 5rem;
+    flex: 1;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    padding-right:110px;
+    padding-left: 110px;
 }
 
+
+
 .h1-title {
-    height: 18px;
-    font-size: 3rem;
-    letter-spacing: 9.5px;
-    font-style: normal;
-    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    text-align:left;
-    padding-bottom: 3rem;
+    font-family: "Forum", serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #111;
+    line-height: 1;
 }
 
 .options-container {
@@ -119,68 +123,68 @@ main {
 }
 
 .h2-title {
+    font-size: 1.15rem;
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
+    font-weight: 400;
     text-align:left;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .mandatory-text {
     font-size: .75rem;
-    font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-weight: 900;
     color: #db0a5b;
     text-align:left;
+    padding-top: 1rem;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    gap: 3rem;
+    margin-top:40px;
+    gap:55px;
 }
 
 .input-container {
     display: flex;
     flex-direction: row;
-    gap: 16.5rem;
+    gap: 40px;
 }
 
-.card1 {
-    display: flex;
-    flex-direction: column;
-    gap: .4rem;
-}
-
+.card1,
 .card2 {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: .4rem; 
+    gap: .4rem;
 }
 
 .card-label {
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     text-align:left;
+    color: black;
+    font-size: .875rem;
+    font-weight: 900;
+    line-height: 22px;
 }
 
-.email-input {
-    color: black;
+.email-input,
+.password-input {
+    color:#000000;
     font-size: .875rem;
     font-weight: 400;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
     line-height: 22px;
     background-color: white; 
-}
-
-.password-input {
-    color: black;
-    font-size: .875rem;
-    font-weight: 400;
-    font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    line-height: 22px;
-    background-color: white;
+    border: 1px solid #707070;
+    width: 100%;         
+    height: 50px;        
+    padding: 0px 20px;      
+    border-radius: 5px;  
 }
 
 .submit-container {
@@ -188,22 +192,26 @@ main {
     flex-direction: column;
     justify-content: space-between;
     height: 50px;
+    padding-top: 1rem;
 }
 
 .forgotten-psw {
+    display: flex;
     align-self: flex-start;
     font-size: 1rem;
     font-style: normal;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
-    a:link {
-        color: #000000 ;
-    }
-    a:visited {
-        color: #000000;
-        }
+    color: #000000;
+    text-decoration:underline;
+}
+
+.forgotten-psw a:visited {
+    color: #000000;
 }
 
 .submit-button {
+    width: 370px;
+    height: 56px;
     align-self: flex-end;
     font-size: 1rem;
     font-family: Roboto, Open Sans, Arial, Helvetica, sans-serif;
@@ -212,8 +220,10 @@ main {
     font-weight: bold;
     background-color: #000000;
     border: 3px solid #000000;
-    border-radius: 1.5rem;  
+    border-radius: 1.5rem; 
 }
+
+
 
 
 
