@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In | Official Ticketing Service of the Musée du Louvre</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
@@ -15,10 +15,19 @@
 <header>
 
     <section class="header-container">
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="main navigation">
             <ul class="nav-container-left">
+                <li class="menu-figure"></li>
                 <li class="menu-button"><a href="#">Menu</a></li>
-                <li class="language-button"><a href="#">English</a></li>
+                <li class="language-button">
+                    <label for="language">Language</label>
+                    <select id="language" name="language" aria-label="select language">
+                    <option value="Languages" selected>Languages</option>
+                    <option value="English" selected>English</option>
+                    <option value="Français">Français</option>
+                    <option value="Español">Español</option>
+                </li>
+</select>
             </ul>
             <ul class="nav-container-center">
                 <li class="louvre-link"><a href="https://ticket.louvre.fr/en">LOUVRE</a></li>
@@ -29,7 +38,7 @@
                 <li class="navbar-right-button"><a href="#">My Account</a></li>
             </ul>
         </nav>
-        <div class="login-container">Log In - Official Ticketing Service of the Musée du Louvre</div>
+        <div class="login-container"> > Log In - Official Ticketing Service of the Musée du Louvre</div>
     </section>
 </header>
 
@@ -97,7 +106,7 @@
 
         <div class="footer-container2-box">
 
-            <div class="footer-card">
+            <div class="footer-card1">
                 <h2 class="footer-title">TICKETING SERVICES</h2>
                 <ul class="footer-list-left">
                     <li>The Musée du Louvre</li>
@@ -106,7 +115,7 @@
                 </ul>
             </div>
         
-            <div class="footer-card">
+            <div class="footer-card2">
                 <h2 class="footer-title">YOU ARE</h2>
                 <ul class="footer-list-left">
                     <li>Groups</li>
@@ -115,7 +124,7 @@
                 </ul>
             </div>       
 
-            <div class="footer-card">
+            <div class="footer-card3">
                 <h2 class="footer-title">VISITOR INFORMATION</h2>
                 <ul class="footer-list-left">
                     <li>Plan your visit</li>
@@ -124,7 +133,7 @@
                 </ul>
             </div>
 
-            <div class="footer-card2">
+            <div class="footer-card4">
                 <h2 class="footer-title">FOLLOW US</h2>
                 <div class="footer-list-right">
                     <img width="400" src="./src/assets/icons/social_media.png" alt="social media icons">
