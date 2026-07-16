@@ -408,7 +408,7 @@ footer {
 .footer-container2 {
     display: flex;
     justify-content: space-between;
-    border-tpo: .8px solid #707070;
+    border-top: .8px solid #707070;
 }
 
 .footer-container2-box {
